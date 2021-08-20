@@ -1,0 +1,6 @@
+framework module Pods_The_Green_MerchantUITests {
+  umbrella header "Pods-The Green MerchantUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
