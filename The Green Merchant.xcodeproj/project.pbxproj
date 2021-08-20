@@ -1,0 +1,842 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2BB7626B9A96DE557B94B7CB /* Pods_The_Green_Merchant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBB00069B03B24797D36F57 /* Pods_The_Green_Merchant.framework */; };
+		410FA0B72237E53C00CFE88A /* itemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410FA0B62237E53C00CFE88A /* itemDetailsViewController.swift */; };
+		411779CC2243DBBD0099CE7B /* OrderConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411779CB2243DBBD0099CE7B /* OrderConfirmViewController.swift */; };
+		413C6B8D2248A69E00FF10B0 /* ChangePassSellerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413C6B8C2248A69D00FF10B0 /* ChangePassSellerViewController.swift */; };
+		413C6B8F2248B84F00FF10B0 /* UpdateOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413C6B8E2248B84F00FF10B0 /* UpdateOrderViewController.swift */; };
+		414036DE2240D22A0035EDDB /* UpdateItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414036DD2240D22A0035EDDB /* UpdateItemViewController.swift */; };
+		41598B402238BBAB00AE313C /* SellerMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41598B3F2238BBAA00AE313C /* SellerMainViewController.swift */; };
+		41598B422238E88000AE313C /* cartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41598B412238E87F00AE313C /* cartTableViewCell.swift */; };
+		41791D432241EEEB00F4D068 /* SellerOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41791D422241EEEB00F4D068 /* SellerOrdersViewController.swift */; };
+		41791D452241F87600F4D068 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41791D442241F87600F4D068 /* OrderTableViewCell.swift */; };
+		41A52CAF223CD57600C6B6A2 /* SellerItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A52CAE223CD57600C6B6A2 /* SellerItemsViewController.swift */; };
+		41A52CB1223CD58500C6B6A2 /* SellerNewItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A52CB0223CD58500C6B6A2 /* SellerNewItemViewController.swift */; };
+		41DBD7E6223D7E3F00892F2D /* NowOrderingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DBD7E5223D7E3F00892F2D /* NowOrderingViewController.swift */; };
+		41E8E139222A5ECA007617E5 /* ItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E8E138222A5ECA007617E5 /* ItemsTableViewCell.swift */; };
+		41EFB9EF2228DBDB00DF10D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EFB9EE2228DBDB00DF10D8 /* AppDelegate.swift */; };
+		41EFB9F12228DBDB00DF10D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EFB9F02228DBDB00DF10D8 /* ViewController.swift */; };
+		41EFB9F42228DBDB00DF10D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41EFB9F22228DBDB00DF10D8 /* Main.storyboard */; };
+		41EFB9F62228DBE000DF10D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41EFB9F52228DBE000DF10D8 /* Assets.xcassets */; };
+		41EFB9F92228DBE000DF10D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41EFB9F72228DBE000DF10D8 /* LaunchScreen.storyboard */; };
+		41EFBA042228DBE000DF10D8 /* The_Green_MerchantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EFBA032228DBE000DF10D8 /* The_Green_MerchantTests.swift */; };
+		41EFBA0F2228DBE000DF10D8 /* The_Green_MerchantUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EFBA0E2228DBE000DF10D8 /* The_Green_MerchantUITests.swift */; };
+		41EFBA1D2228DEE000DF10D8 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EFBA1C2228DEE000DF10D8 /* ThirdViewController.swift */; };
+		41EFBA1F2228DF0600DF10D8 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EFBA1E2228DF0600DF10D8 /* FirstViewController.swift */; };
+		41EFBA212228DF2700DF10D8 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EFBA202228DF2700DF10D8 /* SecondViewController.swift */; };
+		41F47AC22234303200EA7CE7 /* LoggedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F47AC12234303200EA7CE7 /* LoggedInViewController.swift */; };
+		41F58200223D2CA40058A8A0 /* SellerSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F581FF223D2CA40058A8A0 /* SellerSettingsViewController.swift */; };
+		41F58202223D39070058A8A0 /* SellerItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F58201223D39070058A8A0 /* SellerItemsTableViewCell.swift */; };
+		41FD557B22386522008ADD54 /* ChangePassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FD557A22386522008ADD54 /* ChangePassViewController.swift */; };
+		41FD557D22386530008ADD54 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FD557C22386530008ADD54 /* SettingsViewController.swift */; };
+		41FD557F22386541008ADD54 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FD557E22386541008ADD54 /* AboutUsViewController.swift */; };
+		41FD558122386559008ADD54 /* CheckLoggedIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FD558022386559008ADD54 /* CheckLoggedIn.swift */; };
+		71DD15EA273D01EC95E63F38 /* Pods_The_Green_MerchantUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C9F3B57FC44FE61B02C71E /* Pods_The_Green_MerchantUITests.framework */; };
+		9EFBA4A6562E20C6D970DB5B /* Pods_The_Green_MerchantTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50323AC5FD45F056EF4CA096 /* Pods_The_Green_MerchantTests.framework */; };
+		B878AC0622622F310063A6CC /* 56652932_418292508946484_1398875989383053312_n.png in Resources */ = {isa = PBXBuildFile; fileRef = B878AC0522622F310063A6CC /* 56652932_418292508946484_1398875989383053312_n.png */; };
+		BE8FB132222FB365006DE51B /* BuyerForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8FB131222FB365006DE51B /* BuyerForm.swift */; };
+		BE8FB136222FC6F6006DE51B /* TermsandConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8FB135222FC6F6006DE51B /* TermsandConditions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		41EFBA002228DBE000DF10D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41EFB9E32228DBDA00DF10D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41EFB9EA2228DBDB00DF10D8;
+			remoteInfo = "The Green Merchant";
+		};
+		41EFBA0B2228DBE000DF10D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41EFB9E32228DBDA00DF10D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41EFB9EA2228DBDB00DF10D8;
+			remoteInfo = "The Green Merchant";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14C9F3B57FC44FE61B02C71E /* Pods_The_Green_MerchantUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Green_MerchantUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		410FA0B62237E53C00CFE88A /* itemDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemDetailsViewController.swift; sourceTree = "<group>"; };
+		411779CB2243DBBD0099CE7B /* OrderConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderConfirmViewController.swift; sourceTree = "<group>"; };
+		413C6B8C2248A69D00FF10B0 /* ChangePassSellerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePassSellerViewController.swift; sourceTree = "<group>"; };
+		413C6B8E2248B84F00FF10B0 /* UpdateOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateOrderViewController.swift; sourceTree = "<group>"; };
+		414036DD2240D22A0035EDDB /* UpdateItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateItemViewController.swift; sourceTree = "<group>"; };
+		41598B3F2238BBAA00AE313C /* SellerMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerMainViewController.swift; sourceTree = "<group>"; };
+		41598B412238E87F00AE313C /* cartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cartTableViewCell.swift; sourceTree = "<group>"; };
+		41791D422241EEEB00F4D068 /* SellerOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerOrdersViewController.swift; sourceTree = "<group>"; };
+		41791D442241F87600F4D068 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
+		41A52CAE223CD57600C6B6A2 /* SellerItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerItemsViewController.swift; sourceTree = "<group>"; };
+		41A52CB0223CD58500C6B6A2 /* SellerNewItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerNewItemViewController.swift; sourceTree = "<group>"; };
+		41DBD7E5223D7E3F00892F2D /* NowOrderingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowOrderingViewController.swift; sourceTree = "<group>"; };
+		41E8E138222A5ECA007617E5 /* ItemsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTableViewCell.swift; sourceTree = "<group>"; };
+		41EFB9EB2228DBDB00DF10D8 /* The Green Merchant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Green Merchant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41EFB9EE2228DBDB00DF10D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		41EFB9F02228DBDB00DF10D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		41EFB9F32228DBDB00DF10D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		41EFB9F52228DBE000DF10D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		41EFB9F82228DBE000DF10D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		41EFB9FA2228DBE000DF10D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41EFB9FF2228DBE000DF10D8 /* The Green MerchantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Green MerchantTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41EFBA032228DBE000DF10D8 /* The_Green_MerchantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Green_MerchantTests.swift; sourceTree = "<group>"; };
+		41EFBA052228DBE000DF10D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41EFBA0A2228DBE000DF10D8 /* The Green MerchantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Green MerchantUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41EFBA0E2228DBE000DF10D8 /* The_Green_MerchantUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Green_MerchantUITests.swift; sourceTree = "<group>"; };
+		41EFBA102228DBE000DF10D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41EFBA1C2228DEE000DF10D8 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		41EFBA1E2228DF0600DF10D8 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		41EFBA202228DF2700DF10D8 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		41F47AC12234303200EA7CE7 /* LoggedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInViewController.swift; sourceTree = "<group>"; };
+		41F581FF223D2CA40058A8A0 /* SellerSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerSettingsViewController.swift; sourceTree = "<group>"; };
+		41F58201223D39070058A8A0 /* SellerItemsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerItemsTableViewCell.swift; sourceTree = "<group>"; };
+		41FD557A22386522008ADD54 /* ChangePassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePassViewController.swift; sourceTree = "<group>"; };
+		41FD557C22386530008ADD54 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		41FD557E22386541008ADD54 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		41FD558022386559008ADD54 /* CheckLoggedIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckLoggedIn.swift; sourceTree = "<group>"; };
+		50323AC5FD45F056EF4CA096 /* Pods_The_Green_MerchantTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Green_MerchantTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DE3CCBE3C6D3555E4FD35ED /* Pods-The Green Merchant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Green Merchant.release.xcconfig"; path = "Target Support Files/Pods-The Green Merchant/Pods-The Green Merchant.release.xcconfig"; sourceTree = "<group>"; };
+		77E0CAB22CF2FA5A3797EE10 /* Pods-The Green Merchant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Green Merchant.debug.xcconfig"; path = "Target Support Files/Pods-The Green Merchant/Pods-The Green Merchant.debug.xcconfig"; sourceTree = "<group>"; };
+		AE026A49F34FB608D4BFE7BD /* Pods-The Green MerchantTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Green MerchantTests.release.xcconfig"; path = "Target Support Files/Pods-The Green MerchantTests/Pods-The Green MerchantTests.release.xcconfig"; sourceTree = "<group>"; };
+		B878AC0522622F310063A6CC /* 56652932_418292508946484_1398875989383053312_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 56652932_418292508946484_1398875989383053312_n.png; sourceTree = "<group>"; };
+		BE8FB131222FB365006DE51B /* BuyerForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyerForm.swift; sourceTree = "<group>"; };
+		BE8FB135222FC6F6006DE51B /* TermsandConditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsandConditions.swift; sourceTree = "<group>"; };
+		DBBB00069B03B24797D36F57 /* Pods_The_Green_Merchant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Green_Merchant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC94A73454D64301D6CEAE0A /* Pods-The Green MerchantTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Green MerchantTests.debug.xcconfig"; path = "Target Support Files/Pods-The Green MerchantTests/Pods-The Green MerchantTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E0D3372A88D58F562B4E6B11 /* Pods-The Green MerchantUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Green MerchantUITests.debug.xcconfig"; path = "Target Support Files/Pods-The Green MerchantUITests/Pods-The Green MerchantUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EEAB29A795A33CE38ACD36C7 /* Pods-The Green MerchantUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Green MerchantUITests.release.xcconfig"; path = "Target Support Files/Pods-The Green MerchantUITests/Pods-The Green MerchantUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41EFB9E82228DBDB00DF10D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BB7626B9A96DE557B94B7CB /* Pods_The_Green_Merchant.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41EFB9FC2228DBE000DF10D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EFBA4A6562E20C6D970DB5B /* Pods_The_Green_MerchantTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41EFBA072228DBE000DF10D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71DD15EA273D01EC95E63F38 /* Pods_The_Green_MerchantUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D4D334EE733ADE81400EC01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBBB00069B03B24797D36F57 /* Pods_The_Green_Merchant.framework */,
+				50323AC5FD45F056EF4CA096 /* Pods_The_Green_MerchantTests.framework */,
+				14C9F3B57FC44FE61B02C71E /* Pods_The_Green_MerchantUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		41EFB9E22228DBDA00DF10D8 = {
+			isa = PBXGroup;
+			children = (
+				41EFB9ED2228DBDB00DF10D8 /* The Green Merchant */,
+				41EFBA022228DBE000DF10D8 /* The Green MerchantTests */,
+				41EFBA0D2228DBE000DF10D8 /* The Green MerchantUITests */,
+				41EFB9EC2228DBDB00DF10D8 /* Products */,
+				7E4A449431F2C87F164C8C2E /* Pods */,
+				1D4D334EE733ADE81400EC01 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		41EFB9EC2228DBDB00DF10D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41EFB9EB2228DBDB00DF10D8 /* The Green Merchant.app */,
+				41EFB9FF2228DBE000DF10D8 /* The Green MerchantTests.xctest */,
+				41EFBA0A2228DBE000DF10D8 /* The Green MerchantUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41EFB9ED2228DBDB00DF10D8 /* The Green Merchant */ = {
+			isa = PBXGroup;
+			children = (
+				41EFB9EE2228DBDB00DF10D8 /* AppDelegate.swift */,
+				41EFB9F22228DBDB00DF10D8 /* Main.storyboard */,
+				41FD557E22386541008ADD54 /* AboutUsViewController.swift */,
+				BE8FB131222FB365006DE51B /* BuyerForm.swift */,
+				41FD557A22386522008ADD54 /* ChangePassViewController.swift */,
+				413C6B8C2248A69D00FF10B0 /* ChangePassSellerViewController.swift */,
+				41598B412238E87F00AE313C /* cartTableViewCell.swift */,
+				41FD558022386559008ADD54 /* CheckLoggedIn.swift */,
+				41EFBA1E2228DF0600DF10D8 /* FirstViewController.swift */,
+				41E8E138222A5ECA007617E5 /* ItemsTableViewCell.swift */,
+				410FA0B62237E53C00CFE88A /* itemDetailsViewController.swift */,
+				41EFB9F02228DBDB00DF10D8 /* ViewController.swift */,
+				41F47AC12234303200EA7CE7 /* LoggedInViewController.swift */,
+				41DBD7E5223D7E3F00892F2D /* NowOrderingViewController.swift */,
+				41791D442241F87600F4D068 /* OrderTableViewCell.swift */,
+				411779CB2243DBBD0099CE7B /* OrderConfirmViewController.swift */,
+				41598B3F2238BBAA00AE313C /* SellerMainViewController.swift */,
+				41A52CAE223CD57600C6B6A2 /* SellerItemsViewController.swift */,
+				41A52CB0223CD58500C6B6A2 /* SellerNewItemViewController.swift */,
+				41791D422241EEEB00F4D068 /* SellerOrdersViewController.swift */,
+				41F581FF223D2CA40058A8A0 /* SellerSettingsViewController.swift */,
+				41FD557C22386530008ADD54 /* SettingsViewController.swift */,
+				41F58201223D39070058A8A0 /* SellerItemsTableViewCell.swift */,
+				41EFBA202228DF2700DF10D8 /* SecondViewController.swift */,
+				BE8FB135222FC6F6006DE51B /* TermsandConditions.swift */,
+				41EFBA1C2228DEE000DF10D8 /* ThirdViewController.swift */,
+				413C6B8E2248B84F00FF10B0 /* UpdateOrderViewController.swift */,
+				414036DD2240D22A0035EDDB /* UpdateItemViewController.swift */,
+				41EFB9F52228DBE000DF10D8 /* Assets.xcassets */,
+				41EFB9F72228DBE000DF10D8 /* LaunchScreen.storyboard */,
+				41EFB9FA2228DBE000DF10D8 /* Info.plist */,
+				B878AC0522622F310063A6CC /* 56652932_418292508946484_1398875989383053312_n.png */,
+			);
+			path = "The Green Merchant";
+			sourceTree = "<group>";
+		};
+		41EFBA022228DBE000DF10D8 /* The Green MerchantTests */ = {
+			isa = PBXGroup;
+			children = (
+				41EFBA032228DBE000DF10D8 /* The_Green_MerchantTests.swift */,
+				41EFBA052228DBE000DF10D8 /* Info.plist */,
+			);
+			path = "The Green MerchantTests";
+			sourceTree = "<group>";
+		};
+		41EFBA0D2228DBE000DF10D8 /* The Green MerchantUITests */ = {
+			isa = PBXGroup;
+			children = (
+				41EFBA0E2228DBE000DF10D8 /* The_Green_MerchantUITests.swift */,
+				41EFBA102228DBE000DF10D8 /* Info.plist */,
+			);
+			path = "The Green MerchantUITests";
+			sourceTree = "<group>";
+		};
+		7E4A449431F2C87F164C8C2E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77E0CAB22CF2FA5A3797EE10 /* Pods-The Green Merchant.debug.xcconfig */,
+				6DE3CCBE3C6D3555E4FD35ED /* Pods-The Green Merchant.release.xcconfig */,
+				DC94A73454D64301D6CEAE0A /* Pods-The Green MerchantTests.debug.xcconfig */,
+				AE026A49F34FB608D4BFE7BD /* Pods-The Green MerchantTests.release.xcconfig */,
+				E0D3372A88D58F562B4E6B11 /* Pods-The Green MerchantUITests.debug.xcconfig */,
+				EEAB29A795A33CE38ACD36C7 /* Pods-The Green MerchantUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		41EFB9EA2228DBDB00DF10D8 /* The Green Merchant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41EFBA132228DBE000DF10D8 /* Build configuration list for PBXNativeTarget "The Green Merchant" */;
+			buildPhases = (
+				0D646BBF38572661A1A037BE /* [CP] Check Pods Manifest.lock */,
+				41EFB9E72228DBDB00DF10D8 /* Sources */,
+				41EFB9E82228DBDB00DF10D8 /* Frameworks */,
+				41EFB9E92228DBDB00DF10D8 /* Resources */,
+				8CA07158B2560806040C82A6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "The Green Merchant";
+			productName = "The Green Merchant";
+			productReference = 41EFB9EB2228DBDB00DF10D8 /* The Green Merchant.app */;
+			productType = "com.apple.product-type.application";
+		};
+		41EFB9FE2228DBE000DF10D8 /* The Green MerchantTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41EFBA162228DBE000DF10D8 /* Build configuration list for PBXNativeTarget "The Green MerchantTests" */;
+			buildPhases = (
+				88CB4ED7199E751E82BF5C69 /* [CP] Check Pods Manifest.lock */,
+				41EFB9FB2228DBE000DF10D8 /* Sources */,
+				41EFB9FC2228DBE000DF10D8 /* Frameworks */,
+				41EFB9FD2228DBE000DF10D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41EFBA012228DBE000DF10D8 /* PBXTargetDependency */,
+			);
+			name = "The Green MerchantTests";
+			productName = "The Green MerchantTests";
+			productReference = 41EFB9FF2228DBE000DF10D8 /* The Green MerchantTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		41EFBA092228DBE000DF10D8 /* The Green MerchantUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41EFBA192228DBE000DF10D8 /* Build configuration list for PBXNativeTarget "The Green MerchantUITests" */;
+			buildPhases = (
+				EB12445FB3D33D187B5D5F0B /* [CP] Check Pods Manifest.lock */,
+				41EFBA062228DBE000DF10D8 /* Sources */,
+				41EFBA072228DBE000DF10D8 /* Frameworks */,
+				41EFBA082228DBE000DF10D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41EFBA0C2228DBE000DF10D8 /* PBXTargetDependency */,
+			);
+			name = "The Green MerchantUITests";
+			productName = "The Green MerchantUITests";
+			productReference = 41EFBA0A2228DBE000DF10D8 /* The Green MerchantUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		41EFB9E32228DBDA00DF10D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Paul Austria";
+				TargetAttributes = {
+					41EFB9EA2228DBDB00DF10D8 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					41EFB9FE2228DBE000DF10D8 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 41EFB9EA2228DBDB00DF10D8;
+					};
+					41EFBA092228DBE000DF10D8 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 41EFB9EA2228DBDB00DF10D8;
+					};
+				};
+			};
+			buildConfigurationList = 41EFB9E62228DBDA00DF10D8 /* Build configuration list for PBXProject "The Green Merchant" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 41EFB9E22228DBDA00DF10D8;
+			productRefGroup = 41EFB9EC2228DBDB00DF10D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41EFB9EA2228DBDB00DF10D8 /* The Green Merchant */,
+				41EFB9FE2228DBE000DF10D8 /* The Green MerchantTests */,
+				41EFBA092228DBE000DF10D8 /* The Green MerchantUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		41EFB9E92228DBDB00DF10D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41EFB9F92228DBE000DF10D8 /* LaunchScreen.storyboard in Resources */,
+				41EFB9F62228DBE000DF10D8 /* Assets.xcassets in Resources */,
+				41EFB9F42228DBDB00DF10D8 /* Main.storyboard in Resources */,
+				B878AC0622622F310063A6CC /* 56652932_418292508946484_1398875989383053312_n.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41EFB9FD2228DBE000DF10D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41EFBA082228DBE000DF10D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D646BBF38572661A1A037BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-The Green Merchant-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88CB4ED7199E751E82BF5C69 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-The Green MerchantTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CA07158B2560806040C82A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-The Green Merchant/Pods-The Green Merchant-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-The Green Merchant/Pods-The Green Merchant-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB12445FB3D33D187B5D5F0B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-The Green MerchantUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41EFB9E72228DBDB00DF10D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41F47AC22234303200EA7CE7 /* LoggedInViewController.swift in Sources */,
+				41FD557F22386541008ADD54 /* AboutUsViewController.swift in Sources */,
+				41791D432241EEEB00F4D068 /* SellerOrdersViewController.swift in Sources */,
+				41FD558122386559008ADD54 /* CheckLoggedIn.swift in Sources */,
+				41A52CAF223CD57600C6B6A2 /* SellerItemsViewController.swift in Sources */,
+				410FA0B72237E53C00CFE88A /* itemDetailsViewController.swift in Sources */,
+				411779CC2243DBBD0099CE7B /* OrderConfirmViewController.swift in Sources */,
+				41EFB9F12228DBDB00DF10D8 /* ViewController.swift in Sources */,
+				41EFBA1D2228DEE000DF10D8 /* ThirdViewController.swift in Sources */,
+				41E8E139222A5ECA007617E5 /* ItemsTableViewCell.swift in Sources */,
+				413C6B8D2248A69E00FF10B0 /* ChangePassSellerViewController.swift in Sources */,
+				413C6B8F2248B84F00FF10B0 /* UpdateOrderViewController.swift in Sources */,
+				41DBD7E6223D7E3F00892F2D /* NowOrderingViewController.swift in Sources */,
+				41598B402238BBAB00AE313C /* SellerMainViewController.swift in Sources */,
+				BE8FB136222FC6F6006DE51B /* TermsandConditions.swift in Sources */,
+				41FD557B22386522008ADD54 /* ChangePassViewController.swift in Sources */,
+				41EFB9EF2228DBDB00DF10D8 /* AppDelegate.swift in Sources */,
+				41F58200223D2CA40058A8A0 /* SellerSettingsViewController.swift in Sources */,
+				41F58202223D39070058A8A0 /* SellerItemsTableViewCell.swift in Sources */,
+				BE8FB132222FB365006DE51B /* BuyerForm.swift in Sources */,
+				41A52CB1223CD58500C6B6A2 /* SellerNewItemViewController.swift in Sources */,
+				41791D452241F87600F4D068 /* OrderTableViewCell.swift in Sources */,
+				41EFBA212228DF2700DF10D8 /* SecondViewController.swift in Sources */,
+				414036DE2240D22A0035EDDB /* UpdateItemViewController.swift in Sources */,
+				41EFBA1F2228DF0600DF10D8 /* FirstViewController.swift in Sources */,
+				41FD557D22386530008ADD54 /* SettingsViewController.swift in Sources */,
+				41598B422238E88000AE313C /* cartTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41EFB9FB2228DBE000DF10D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41EFBA042228DBE000DF10D8 /* The_Green_MerchantTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41EFBA062228DBE000DF10D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41EFBA0F2228DBE000DF10D8 /* The_Green_MerchantUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		41EFBA012228DBE000DF10D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41EFB9EA2228DBDB00DF10D8 /* The Green Merchant */;
+			targetProxy = 41EFBA002228DBE000DF10D8 /* PBXContainerItemProxy */;
+		};
+		41EFBA0C2228DBE000DF10D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41EFB9EA2228DBDB00DF10D8 /* The Green Merchant */;
+			targetProxy = 41EFBA0B2228DBE000DF10D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		41EFB9F22228DBDB00DF10D8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41EFB9F32228DBDB00DF10D8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		41EFB9F72228DBE000DF10D8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41EFB9F82228DBE000DF10D8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		41EFBA112228DBE000DF10D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		41EFBA122228DBE000DF10D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		41EFBA142228DBE000DF10D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77E0CAB22CF2FA5A3797EE10 /* Pods-The Green Merchant.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VGK6V3GH2K;
+				INFOPLIST_FILE = "The Green Merchant/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ecruz.greenmerchant-001";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		41EFBA152228DBE000DF10D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DE3CCBE3C6D3555E4FD35ED /* Pods-The Green Merchant.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VGK6V3GH2K;
+				INFOPLIST_FILE = "The Green Merchant/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ecruz.greenmerchant-001";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		41EFBA172228DBE000DF10D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC94A73454D64301D6CEAE0A /* Pods-The Green MerchantTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6N6B4RTQB3;
+				INFOPLIST_FILE = "The Green MerchantTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "apaul.stephen.The-Green-MerchantTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The Green Merchant.app/The Green Merchant";
+			};
+			name = Debug;
+		};
+		41EFBA182228DBE000DF10D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE026A49F34FB608D4BFE7BD /* Pods-The Green MerchantTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6N6B4RTQB3;
+				INFOPLIST_FILE = "The Green MerchantTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "apaul.stephen.The-Green-MerchantTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The Green Merchant.app/The Green Merchant";
+			};
+			name = Release;
+		};
+		41EFBA1A2228DBE000DF10D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0D3372A88D58F562B4E6B11 /* Pods-The Green MerchantUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6N6B4RTQB3;
+				INFOPLIST_FILE = "The Green MerchantUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "apaul.stephen.The-Green-MerchantUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "The Green Merchant";
+			};
+			name = Debug;
+		};
+		41EFBA1B2228DBE000DF10D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEAB29A795A33CE38ACD36C7 /* Pods-The Green MerchantUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6N6B4RTQB3;
+				INFOPLIST_FILE = "The Green MerchantUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "apaul.stephen.The-Green-MerchantUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "The Green Merchant";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		41EFB9E62228DBDA00DF10D8 /* Build configuration list for PBXProject "The Green Merchant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41EFBA112228DBE000DF10D8 /* Debug */,
+				41EFBA122228DBE000DF10D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41EFBA132228DBE000DF10D8 /* Build configuration list for PBXNativeTarget "The Green Merchant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41EFBA142228DBE000DF10D8 /* Debug */,
+				41EFBA152228DBE000DF10D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41EFBA162228DBE000DF10D8 /* Build configuration list for PBXNativeTarget "The Green MerchantTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41EFBA172228DBE000DF10D8 /* Debug */,
+				41EFBA182228DBE000DF10D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41EFBA192228DBE000DF10D8 /* Build configuration list for PBXNativeTarget "The Green MerchantUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41EFBA1A2228DBE000DF10D8 /* Debug */,
+				41EFBA1B2228DBE000DF10D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 41EFB9E32228DBDA00DF10D8 /* Project object */;
+}
